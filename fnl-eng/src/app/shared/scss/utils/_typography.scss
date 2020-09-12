@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap');
+
+$bebas-neue: "Bebas Neue", cursive;
+$titillium-web: "Titillium Web", sans-serif;
+$ubuntu: "Ubuntu", sans-serif;
+$montserrat-bold: "Montserrat", sans-serif;
+$exo: 'Exo 2', sans-serif;
+
+// NAVBAR
+.navbar-brand {
+     font-size: rem(30);
+     font-family: $montserrat-bold;
+}
+// SIDEBAR
+#sidebar .sidebar-header,
+#sidebar .components .section {
+     font-family: $montserrat-bold;
+     font-size: rem(14);
+}
+#sidebar .components li span {
+     font-family: $ubuntu;
+     font-size: rem(14);
+}
+#sidebar .sidebar-menu li a i {
+     font-size: rem(2);
+}
+// HEADER
+.page-header .title {
+     font-family: $titillium-web;
+     font-size: rem(32);
+     font-weight: 200;
+}
+.page-header .subtitle {
+     font-family: $titillium-web;
+     font-size: rem(16);
+     font-weight: 400;
+}
+
+.validate-title{
+     font-family: $montserrat-bold;
+}
+
+.brand-name{
+     font-family: $exo;
+     font-weight: 600;
+}
+
+// #region CARD
+.card .card-header .card-title {
+     font-family: $titillium-web;
+     font-weight: 600;
+     font-size: rem(22);
+}
+.card .card-header span {
+     font-size: rem(12);
+}
+.card .card-body {
+     font-family: $ubuntu;
+     font-size: rem(16) !important;
+     .card-user-name {
+          font-size: rem(20) !important;
+
+          font-weight: bold;
+     }
+     .card-user-occupation {
+          font-size: rem(16) !important;
+          font-weight: bold;
+     }
+}
+// #endregion
+.floating-button {
+     font-size: rem(22);
+}
+
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}

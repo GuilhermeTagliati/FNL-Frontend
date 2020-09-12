@@ -1,0 +1,43 @@
+@import "../shared/scss/main.scss";
+
+.login-content object {
+  height: rem(150);
+}
+.login-side {
+    background: url('../../assets/img/pexels-gustavo-fring-4254168.jpg') no-repeat center;
+    background-size: cover;
+}
+.darken-panel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color: #000000, $alpha: .3);
+}
+.centered {
+  display: flex;
+  align-items: center;
+}
+.login-content .login-card {
+  margin-top: rem(50);
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  .login-content object {
+    height: rem(200);
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}

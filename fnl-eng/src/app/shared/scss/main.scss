@@ -1,0 +1,19 @@
+// BOOTSTRAP CORE
+@import '../../../../node_modules/mdbootstrap/scss/core/bootstrap/functions';
+@import '../../../../node_modules/mdbootstrap/scss/core/bootstrap/variables';
+@import '../../../../node_modules/mdbootstrap/scss/core/mixins';
+
+// UTILITIES
+@import 'utils/functions';
+@import 'utils/variables';
+@import 'utils/typography';
+@import 'utils/medias';
+
+// CORE
+@import 'core/body';
+
+// THEMES 
+@import 'themes/colors';
+@import 'themes/themes';
+
+// MEDIA QUERIES

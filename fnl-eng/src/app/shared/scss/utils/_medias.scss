@@ -1,0 +1,58 @@
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 500px) {
+     #sidebar {
+          margin-left: -$sidebar-width;
+     }
+     #sidebar.active {
+          margin-left: 0;
+     }
+     #content {
+          width: 100%;
+     }
+     #content.active {
+          width: 100%;
+     }
+     .navbar-container {
+          width: 100%;
+     }
+     .navbar .nav-item h6 {
+          display: none !important;
+     }
+     #sidebarCollapse span {
+          display: none;
+     }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+     #sidebar {
+          margin-left: -$sidebar-width;
+     }
+     #sidebar.active {
+          margin-left: 0;
+     }
+     #content {
+          width: 100%;
+     }
+     #content.active {
+          width: calc(100% - #{$sidebar-width});
+     }
+     .navbar-container {
+          width: 100%;
+     }
+     #sidebarCollapse span {
+          display: none;
+     }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+     .chart-container{
+          height: 45vh !important;
+     }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
+}

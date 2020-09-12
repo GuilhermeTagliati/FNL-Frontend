@@ -1,0 +1,43 @@
+// COLOR VARIABLES
+$white: #fff;
+$dark: #444;
+$success: #00C851;
+$warning: #ffcc00;
+// Light Pallete
+$main-light: #140b3c;
+$secondary-light: #f5f5f5;
+$main: #a50016;
+// COLOR SETS
+$theme-colors: (
+     "light": (
+          "login-card-background":
+               linear-gradient(225deg, darken($main, 10) 0%, lighten($main, 0) 50%, lighten($main, 20) 100%),
+          "body-background": darken($secondary-light, 15),
+          "body-color": darken($secondary-light, 50),
+          "nav-background": darken($main, 0),
+          "navbar-border-color": darken($main, 2),
+          "sidebar-background": darken($main, 10),
+          "sidebar-border-color": darken($main, 0),
+          "sidebar-color": lighten($secondary, 10),
+          "sidebar-menu-color": lighten($white, 10),
+          "sidebar-submenu-border": darken($dark, 5),
+          "sidebar-link-background": lighten($secondary-light, 2),
+          "sidebar-link-background-hover": lighten($main, 0),
+          "sidebar-link-color-hover": lighten($white, 10),
+          "sidebar-link-submenu-background": lighten($secondary-light, 5),
+          "page-header-title-color": darken($dark, 10),
+          "card-content-background": darken($white, 0),
+          "card-content-color": darken($main, 0),
+          "table-row-odd-background": darken($white, 5),
+          "floating-button": darken($main, 0),
+          "delete-button": darken($main, 0),
+          "edit-button": darken($warning, 0),
+          "event-participation-present": darken($success, 0),
+          "event-participation-notpresent": darken($main, 0),
+          "event-participation-justified": darken($main-light, 0),
+          "event-participation-present-overlay": lighten($success, 40),
+          "event-participation-notpresent-overlay": lighten($main, 60),
+          "event-participation-justified-overlay": lighten($main-light, 60)
+     ),
+     "dark": (),
+);
