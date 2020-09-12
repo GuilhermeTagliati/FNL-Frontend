@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "fnl-eng"
+    }
+  },
+  "defaultProject": "fnl-eng",
+  "cli": {
+    "analytics": "b22be29f-e8d6-46c0-9fa2-62d5dad919c3"
+  }
 }
