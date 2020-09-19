@@ -1,0 +1,26 @@
+@import "../shared/scss/main.scss";
+
+
+.navbar-container {
+    width: 100%;
+    transition: ease-in-out 0.4s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.navbar-container .navbar{
+    position: fixed;
+    width: 100%;
+    height: $navbar-height !important;
+    z-index: 999;
+    border-bottom: 1px solid;
+    box-shadow: none;
+}
+.navbar-container .navbar .navbar-nav{
+    margin-left: $sidebar-width - $iLogoSize;
+}
+.navbar-container .navbar .collapse-button{
+    position: absolute;
+    top: $navbar-height/2 - rem(10);
+    right: rem(10);
+}

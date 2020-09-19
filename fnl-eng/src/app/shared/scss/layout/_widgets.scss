@@ -1,0 +1,21 @@
+
+// #region USER PROFILE
+.widget.widget-user-profile .user-picture {
+  border: 1px solid black;
+  height: rem(100);
+  width: rem(100);
+  overflow: hidden;
+}
+// #endregion
+// #region USER PROFILE
+.widget.widget-user-skill .progress {
+  height: rem(10);
+}
+// #endregion
+.widget .row-status{
+  border-left: 2px solid;
+}
+
+.widget .role-step{
+  font-size: rem(24);
+}

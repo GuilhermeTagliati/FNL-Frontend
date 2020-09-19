@@ -1,100 +1,105 @@
 @each $theme, $map in $theme-colors {
-     .body-#{$theme} .login-content .login-side {
-          // background: rgb(0, 42, 144);
-          background: map-get($map, login-card-background);
-     }
+  body {
+    background-color: map-get($map, body-background) !important;
+    color: map-get($map, body-color);
+  }
+  #sidebar {
+    background-color: map-get($map, sidebar-background) !important;
+    border-color: map-get($map, sidebar-border-color) !important;
+  }
+  // #region NAVBAR
+  .navbar {
+    background: map-get($map, nav-background) !important;
+    border-color: map-get($map, navbar-border-color);
+  }
+  .navbar-brand {
+    color: map-get($map, sidebar-menu-color);
+  }
+  // #endregion
 
-     .body-#{$theme} {
-          background: map-get($map, body-background) !important;
-          color: map-get($map, body-color);
-     }
+  // #region SIDEBAR
 
-     .body-#{$theme} .page-wrapper .sidebar-header {
-          background: map-get($map, nav-background) !important;
-     }
-     .body-#{$theme} .navbar {
-          background: map-get($map, nav-background) !important;
-          border-color: map-get($map, navbar-border-color);
-     }
-     .body-#{$theme} .navbar-brand {
-          color: map-get($map, sidebar-menu-color);
-     }
+  .sidebar-container .sidebar-menu-itens .section {
+    color: map-get($map, sidebar-menu-color);
+  }
 
-     // SIDEBAR
-     .body-#{$theme} .page-wrapper .sidebar-menu {
-          background: map-get($map, sidebar-background);
-          border: 1px solid;
-          border-color: map-get($map, sidebar-border-color);
-     }
-     .body-#{$theme} .page-wrapper .sidebar-menu .components > li > a {
-          color: map-get($map, sidebar-color);
-     }
-     .body-#{$theme} .page-wrapper .sidebar-menu .components .section {
-          color: map-get($map, sidebar-menu-color);
-     }
-     .body-#{$theme} .page-wrapper .sidebar-menu .components > li > a:hover {
-          background-color: map-get($map, sidebar-link-background-hover);
-          color: map-get($map, sidebar-link-color-hover);
-     }
-     .body-#{$theme} .page-wrapper .sidebar-menu .components li a.active {
-          background-color: map-get($map, sidebar-link-background-hover);
-          color: map-get($map, sidebar-link-color-hover);
-     }
-     .body-#{$theme} .page-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a {
-          border-color: map-get($map, sidebar-submenu-border);
-     }
-     .body-#{$theme} .page-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a span:hover {
-          background-color: map-get($map, sidebar-link-background-hover);
-     }
-     // CONTENT
-     .body-#{$theme} .main-content .page-header {
-          .title {
-               color: map-get($map, page-header-title-color);
-          }
-     }
-     .body-#{$theme} .main-content .card .card-header {
-          background-color: map-get($map, card-content-background);
-     }
-     .body-#{$theme} .main-content .card {
-          color: map-get($map, card-content-color);
-     }
-     // Tables
-     table.table tbody tr:nth-of-type(odd) {
-          background: map-get($map, table-row-odd-background);
-     }
+  .sidebar-container .sidebar-dropdown .sidebar-submenu li a {
+    border-color: map-get($map, sidebar-submenu-border);
+  }
 
-     .body-#{$theme} .floating-button {
-          background-color: map-get($map, floating-button);
-     }
+  .sidebar-container .sidebar-menu-itens > li > a {
+    color: map-get($map, sidebar-color);
+  }
 
-     .body-#{$theme} .edit {
-          color: map-get($map, edit-button);
-     }
-     .body-#{$theme} .delete {
-          color: map-get($map, delete-button);
-     }
+  .sidebar-container .sidebar-menu-itens > li > a:hover {
+    background-color: map-get($map, sidebar-link-background-hover);
+    color: map-get($map, sidebar-link-color-hover);
+  }
 
-     .body-#{$theme} .event-participant {
-          &:hover {
-               background-color: map-get($map, body-background) !important;
-          }
-          &.present {
-               background-color: map-get($map, event-participation-present-overlay);
-               & > div {
-                    border-color: map-get($map, event-participation-present) !important;
-               }
-          }
-          &.justified {
-               background-color: map-get($map, event-participation-justified-overlay);
-               & > div {
-                    border-color: map-get($map, event-participation-justified) !important;
-               }
-          }
-          &.notpresent {
-               background-color: map-get($map, event-participation-notpresent-overlay);
-               & > div {
-                    border-color: map-get($map, event-participation-notpresent) !important;
-               }
-          }
-     }
+  .sidebar-container .sidebar-menu-itens li a.active {
+    background-color: map-get($map, sidebar-link-background-hover);
+    color: map-get($map, sidebar-link-color-hover);
+  }
+  .sidebar-container .sidebar-dropdown .sidebar-submenu li a span:hover {
+    background-color: map-get($map, sidebar-link-background-hover);
+  }
+  // #endregion
+
+  // #region NAVBAR
+
+  // #endregion
+
+  // #region GENERAL
+  .widget .delete {
+    color: map-get($map, delete-icon);
+    &:hover {
+      color: map-get($map, delete-icon-hover);
+    }
+  }
+  .widget .edit {
+    color: map-get($map, edit-icon);
+    &:hover {
+      color: map-get($map, edit-icon-hover);
+    }
+  }
+  .widget .card .card-header {
+    background-color: map-get($map, widget-card-header);
+  }
+  .widget .card .card-body {
+    background-color: map-get($map, widget-card-body);
+  }
+  .widget .card .card-footer {
+    background-color: map-get($map, widget-card-footer);
+  }
+  .widget .row-status.danger {
+    border-color: map-get($map, border-danger);
+  }
+  .widget .row-status.primary {
+    border-color: map-get($map, border-primary);
+  }
+  .widget .row-status.warning {
+    border-color: map-get($map, border-warning);
+  }
+  .widget .table tbody tr {
+    background: map-get($map, widget-table-row-background);
+    &:hover {
+      background: map-get($map, widget-table-row-background-hover);
+    }
+  }
+  // #endregion
+
+  // #region WIDGETS
+
+  // #endregion
+
+  // #region VALIDATION
+  .body-#{$theme} .valid {
+    border: 1px solid;
+    border-color: map-get($map, border-success);
+  }
+  .body-#{$theme} .invalid {
+    border: 1px solid;
+    border-color: map-get($map, border-danger);
+  }
+  // #endregion
 }
