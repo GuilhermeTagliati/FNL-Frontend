@@ -8,6 +8,8 @@ import { UserRegisterComponent } from './user-register/user-register.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LandingComponent } from './landing/landing.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -16,11 +18,12 @@ import { LandingComponent } from './landing/landing.component';
     UserRegisterComponent,
     SidebarComponent,
     NavbarComponent,
-    LandingComponent
+    LandingComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
