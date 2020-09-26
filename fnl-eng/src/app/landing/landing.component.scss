@@ -156,16 +156,48 @@ img{
 }
 .img.carousel{
     margin-bottom: 1%;
+    margin-top: 90%;
     background-color: white;
     border: 10px;
     border-color: white;
     border-radius: 50%;
-    height: 180px;
-    width: 180px;
+    height: 50% auto;
+    width: 50%;
     margin: 10%;
-    margin-left: 15%;
+    margin-left: 40%;
 }
 .card.carousel{
     background-color: rgb(0, 179, 192);
     border-radius: 0px;
+}
+.column {
+    float: left;
+    width: 30%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.nome{
+    color: white;
+    text-align: left;
+    margin-top: 22%;
+    margin-left: 5%;
+}
+.sobrenome{
+    color: white;
+    text-align: left;
+    font-weight: lighter;
+    margin-top: 5%;
+    margin-left: 2%;
+    font-size: xx-large;
+}
+.italico{
+    color: white;
+    font: exo2;
+    margin-top: 10%;
+    text-align: left;
+    display: flex;
+    font-size: 150%;
 }
