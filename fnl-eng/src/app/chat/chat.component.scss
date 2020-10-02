@@ -1,0 +1,95 @@
+.col-md-2, .col-md-10{
+    padding:1px;
+}
+.chat-window{
+    bottom:0;
+    position:fixed;
+    right: -52px;
+    min-width: 450px;
+    
+}
+.msg_container_base{
+    background: #eee;
+    margin-bottom: 1px;
+    padding: 0 10px 10px;
+    max-height:300px;
+    overflow-x:hidden;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+.top-bar {
+    background-color: rgb(212, 225, 255);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: black;
+    font-family: exo2;
+    padding: 10px;
+    padding-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.msg_receive{
+    padding-bottom:1px !important;
+    
+}
+.msg_sent{
+    padding-bottom:1px !important;
+}
+.messages-sent {
+    background: rgb(79, 3, 255);
+    padding: 8px;
+    border-radius: 14px;
+    border-bottom-right-radius: 0;
+    max-width:100%;
+    color: white;
+    font-family: ubuntu;
+}
+.messages-received {
+    background: grey;
+    padding: 8px;
+    border-radius: 14px;
+    border-bottom-left-radius: 0;
+    max-width:100%;
+    color: white;
+    font-family: ubuntu;
+}
+.msg_container {
+    padding: 8px;
+    overflow: hidden;
+}
+img {
+    height: 65px;
+    width: 0 auto;
+}
+.base_sent {
+  justify-content: flex-end;
+  
+}
+.msg_container_base::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 10px #eee;
+    background-color: #eee;
+    
+}
+.msg_container_base::-webkit-scrollbar
+{
+    width: 8px;
+    background-color: white;
+}
+.msg_container_base::-webkit-scrollbar-thumb
+{
+    border-radius: 90px;
+    background-color: rgb(201, 201, 201);
+}
+.btn{
+    background-color: rgb(66, 130, 250);
+    border-radius: 20px;
+    margin-top: 2px;
+    color: white;
+}
+.chat_input{
+    border-radius: 8px;
+    overflow: hidden;
+}
